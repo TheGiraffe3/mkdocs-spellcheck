@@ -1,9 +1,11 @@
 name: "MKDocs spellcheck"
 description: "A spellcheck using pawamoy's action. Only used for mathesar right now."
 author: TheGiraffe3
+
 branding:
   color: green
   icon: type
+
 runs:
-  using: 'python3'
+  using: 'node20'
   main: 'src/mkdocs_spellcheck/backends/symspellpy.py'
