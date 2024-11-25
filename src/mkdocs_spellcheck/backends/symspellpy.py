@@ -1,5 +1,3 @@
-"""Backend for the `symspellpy` library."""
-
 from __future__ import annotations
 
 import sys
@@ -22,18 +20,7 @@ logger = get_plugin_logger(__name__)
 
 
 class SymspellpyBackend(Backend):
-    """Backend for the `symspellpy` library."""
-
     def __init__(self, config: dict[str, Any], known_words: set[str] | None = None) -> None:  # noqa: ARG002
-        """Initialize the `symspellpy` backend.
-
-        This backend needs to load dictionaries provided
-        by `symspellpy` itself.
-
-        Parameters:
-            config: User configuration from `mkdocs.yml`.
-            known_words: Globally known words.
-        """
         self.spell = SymSpell()
         dictionary_res = resources.files("symspellpy").joinpath("frequency_dictionary_en_82_765.txt")
         with resources.as_file(dictionary_res) as dictionary_path:
