@@ -8,4 +8,4 @@ branding:
 
 runs:
   using: 'node20'
-  main: 'src/mkdocs_spellcheck/backends/symspellpy.py'
+  main: 'src/mkdocs_spellcheck/backends/symspellpy.mjs'
