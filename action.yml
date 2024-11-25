@@ -4,3 +4,6 @@ author: TheGiraffe3
 branding:
   color: green
   icon: type
+runs:
+  using: 'python3'
+  main: 'src/mkdocs_spellcheck/backends/symspellpy.py'
