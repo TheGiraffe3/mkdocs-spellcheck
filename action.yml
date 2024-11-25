@@ -1,0 +1,6 @@
+name: "MKDocs spellcheck"
+description: "A spellcheck using pawamoy's action. Only used for mathesar right now."
+author: TheGiraffe3
+branding:
+  color: green
+  icon: type
